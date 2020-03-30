@@ -12,6 +12,7 @@ covid_statistika_status = api_odgovor_mk.json()['stat']  #Ova e status dali poda
 if covid_statistika_status == "ok":
 
     vkupno_svet = print("Вкупно случаи во светот: "+ str(api_odgovor_svet.json()['confirmed']))
+    vkupno_svet = print("Вкупно смртни случаи во светот: " + str(api_odgovor_svet.json()['deaths']))
     mk_novi = print("Македонија - нови денес:", covid_statistika[0]["total_new_cases_today"])
     mk_smrt = print("Македонија - смртни случаи:", covid_statistika[0]["total_deaths"])
     mk_izl = print("Македонија - излекувани: ", covid_statistika[0]["total_recovered"])
