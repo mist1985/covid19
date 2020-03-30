@@ -3,6 +3,7 @@ import csv
 
 api_odgovor_svet = requests.get('https://covid19api.herokuapp.com/latest')
 assert api_odgovor_svet.status_code < 400 #proverka dali sajtot e online assert
+
 api_odgovor_mk = requests.get('https://thevirustracker.com/free-api?countryTotal=MK', headers={"User-Agent": "Chrome"})
 assert api_odgovor_mk.status_code < 400 #proverka dali sajtot e online so assert
 
